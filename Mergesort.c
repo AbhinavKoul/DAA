@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
+int size;
 void main()
 {
-	int size,i;
+	int i;
 	printf("Enter the Size of array\t:");
 	scanf("%d",&size);
 	int arr[size];
@@ -36,7 +37,7 @@ void mergesort(int a[],int low,int high)
 }
 void combine(int a[],int low,int mid,int high)
 {
-	int i,j,k,c[100];
+	int i,j,k,c[size];
 	//initializing variables
 	k = low;
 	i = low;
