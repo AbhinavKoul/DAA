@@ -49,7 +49,7 @@ void main()
 	int a[size],i;
 	//take inputs
 	for(i=0;i<size;i++)
-		scanf("%d",&a[i]);
+		a[i] = rand()%100;
 	//inititaLIze clock varuiables
 	clock_t start,end;	//to store initial and final state of the clock
 	double time;	// to store total time
