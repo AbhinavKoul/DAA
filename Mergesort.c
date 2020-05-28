@@ -17,7 +17,7 @@ void main()
 	start = clock();
 	mergesort(arr,0,size-1);
 	end = clock();
-	time = (double)(end-start)/CLOCKS_PER_SEC;
+	time = (double)(end-start)/CLOCKS_PER_SEC; 
 	printf("Sorted arrat is\n:");
 	for(i=0;i<size;i++)	
 		printf("%d    ",arr[i]);
@@ -39,7 +39,9 @@ void combine(int a[],int low,int mid,int high)
 {
 	int i,j,k,c[size];
 	//initializing variables
-	k = low;
+	//new array
+	k = low; 
+	//previous array
 	i = low;
 	j = mid +1;
 	
