@@ -6,56 +6,6 @@ int max(int a,int b)
  else
   return b;
 }
-
-// void knapsack(int m,int n,int w[],int p[])
-// {
-// int v[100][200],x[10],i,j,sum=0;
-
-// for(i=0;i<=m;i++)
-// v[0][i]=0;
-
-// for(i=0;i<=m;i++)
-// v[0][i]=0;
-
-// for(i=1;i<=n;i++)
-// {
-//  for(j=0;j<=m;j++)
-//  {
-//   if(j>=w[i])
-//   v[i][j]=max(v[i-1][j],v[i-1][j-w[i]]+p[i]);
-//   else
-//   v[i][j]=v[i-1][j];
-//  }
-// }
-
-// for(i=1;i<=n;i++)
-// x[i]=0;
-
-// i=n;
-// j=m;
-// while(i>0&&j>0)
-// {
-//  if(v[i][j]!=v[i-1][j])
-//  {
-//   x[i]=1;
-//   j=j-w[i];
-//  }
-// i--;
-// }
-
-// printf("\nThe optimal set of items is:\n");
-// for(i=1;i<=n;i++)
-// {
-//  if(x[i]==1)
-//  {
-//   printf("%d\t",i);
-//   sum=sum+p[i];
-//  }
-
-// }
-// printf("\n\ntotal profit=%d",sum);
-// }
-
 // Dynamic programming problem using bottom up approach
 // m : capacity of knapsack (no of col)
 // n : no of items (no of rows)
